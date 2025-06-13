@@ -4,8 +4,6 @@ import { createBrowserHistory } from 'history';
 
 console.log("VITE_API_URL at runtime:", import.meta.env.VITE_API_URL);
 
-console.log("VITE_API_URL at runtime:", import.meta.env.VITE_API_URL);
-
 const history = createBrowserHistory();
 
 // Create an Axios instance with baseURL pointing to our proxy (/api → http://localhost:4000)
