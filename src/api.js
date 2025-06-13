@@ -6,7 +6,7 @@ const history = createBrowserHistory();
 
 // Create an Axios instance with baseURL pointing to our proxy (/api → http://localhost:4000)
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: import.meta.env.VITE_API_URL + '/api',
   timeout: 10000, // 10s timeout
 });
 
