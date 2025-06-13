@@ -232,7 +232,7 @@ console.log("first")
           cellPadding="8"
           style={{ width: '100%', borderCollapse: 'collapse' }}
         >
-          <thead style={{ background: '#f0f0f0' }}>
+          <thead style={{ background: '#f0f0f0', color: '#333' }}>
             <tr>
               <th>Type</th>
               <th>Amount</th>
@@ -276,6 +276,7 @@ console.log("first")
           <div
             style={{
               background: '#fff',
+              color: '#333',
               padding: 20,
               borderRadius: 8,
               minWidth: 320,
@@ -297,7 +298,7 @@ console.log("first")
                   value={recipient}
                   onChange={(e) => setRecipient(e.target.value)}
                   placeholder="e.g. johndoe or john@example.com"
-                  style={{ width: '100%', marginTop: 4 }}
+                  style={{ width: '100%', marginTop: 4, height: '25px',  marginBottom: '24px' }}
                 />
               </div>
             )}
@@ -309,12 +310,12 @@ console.log("first")
               placeholder="Amount"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
-              style={{ width: '100%', marginBottom: 10 }}
+              style={{ width: '100%', marginBottom: 10 , height: '25px', marginBottom: '24px' }}
             />
 
             {errorMsg && <p style={{ color: 'red' }}>{errorMsg}</p>}
 
-            <button onClick={handleAction} style={{ marginRight: 10 }}>
+            <button onClick={handleAction} style={{ marginRight: 10, }}>
               {mode === 'deposit'
                 ? 'Deposit'
                 : mode === 'withdraw'

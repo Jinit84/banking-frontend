@@ -38,7 +38,7 @@ export default function AccountsList() {
         </button>
 
         <table border="1" cellPadding="8" style={{ width: '100%', borderCollapse: 'collapse' }}>
-          <thead style={{ background: '#f0f0f0' }}>
+          <thead style={{ background: '#f0f0f0', color: '#333' }}>
             <tr>
               <th>Username</th>
               <th>Email</th>
