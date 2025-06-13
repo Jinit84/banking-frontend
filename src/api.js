@@ -1,4 +1,5 @@
-// Trigger redeploy
+// Trigger redeploy after changing Vercel Root Directory
+
 import axios from 'axios';
 import { createBrowserHistory } from 'history';
 
